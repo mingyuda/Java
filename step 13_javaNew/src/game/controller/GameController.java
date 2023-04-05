@@ -1,7 +1,6 @@
 package game.controller;
 
 
-import game.dto.Character;
 import game.dto.CharacterWithWeapon;
 import game.exception.NotExistException;
 import game.service.GameService;
@@ -28,9 +27,21 @@ public class GameController {
 		}
 
 		
-		// 
 		public void createChar(CharacterWithWeapon newCharacterWithWeapon) {
 			service.CreateChar(newCharacterWithWeapon);
 		}
+
+
+
+
+		public void insertChar(Object createChar) {
+			service.charInsert(createChar);
+		}
+
+
+//		public void onlyView(CharacterWithWeapon searchName) {
+//			service.viewOnly(searchName);
+//		}
+
 
 }

@@ -34,7 +34,17 @@ public class GameService {
 
 		public void CreateChar(CharacterWithWeapon newCharacterWithWeapon) {
 			GameModelData.makingCharacter(newCharacterWithWeapon);
+			
 		}
+
+		public void charInsert(Object createChar) {
+			GameModelData.insertCharacter(createChar);
+			
+		}
+
+//		public void viewOnly(CharacterWithWeapon searchName) {
+//			
+//		}
 	
 	
 	

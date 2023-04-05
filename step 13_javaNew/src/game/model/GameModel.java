@@ -37,6 +37,13 @@ public class GameModel {
 		System.out.println(newCharacterWithWeapon);
 		
 	}
+
+
+
+	public void insertCharacter(Object createChar) {
+		mainCharacter.add((CharacterWithWeapon) createChar);
+		
+	}
 	
 
 

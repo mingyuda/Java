@@ -23,9 +23,14 @@ public class StartView {
 		String newPlayerName = sc.next();
 		controller.createChar(new CharacterWithWeapon(searchName, new Character(newPlayerName), new Store("입력하세요", 0), 0));
 		
-		
+		// 무기 선택과 동시에 데이터 저장 시도
 		System.out.println("====== 무기 선택 ======");
 		String newEquip = sc.next();
+		controller.createChar(new CharacterWithWeapon(searchName, new Character(newPlayerName), new Store(newEquip, 3500), 0));
+		controller.insertChar(new CharacterWithWeapon(searchName, new Character(newPlayerName), new Store(newEquip, 3500), 0));
+		
+		// 캐릭터 출력
+		System.out.println("====== 내 캐릭터 ======");
 		controller.createChar(new CharacterWithWeapon(searchName, new Character(newPlayerName), new Store(newEquip, 3500), 0));
 		
 	}

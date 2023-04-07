@@ -23,4 +23,14 @@ public class StudentModel {
 		return allData;
 	}
 
+
+	public static Student getOne(String name) {
+		for(int i = 0; i < allData.length; i++) {
+			if (allData[i] != null && name.equals(allData[i].getName())) {
+				return allData[i];
+			}
+		}
+		return null;
+	}
+
 }

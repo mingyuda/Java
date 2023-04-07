@@ -10,6 +10,8 @@ public class StudentController {
 	public static void request(int reNum) {
 		if(reNum == 1) {
 			EndView.printAll((Student[]) StudentModel.getAll());
+		}else if(reNum == 2) {
+			EndView.printOne(StudentModel.getOne("KIM"));
 		}
 		
 		

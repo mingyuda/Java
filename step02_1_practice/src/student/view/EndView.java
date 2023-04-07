@@ -13,4 +13,13 @@ public class EndView {
 		
 	}
 
+	public static void printOne(Student student) {
+		if(student != null) {
+			System.out.println(student);
+		}else {
+			System.out.println("검색한 학생 없음");
+		}
+		
+	}
+
 }

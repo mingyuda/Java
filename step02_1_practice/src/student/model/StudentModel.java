@@ -19,7 +19,7 @@ public class StudentModel {
 	}
 	
 	
-	public static Object getAll() {
+	public static Student[] getAll() {
 		return allData;
 	}
 
@@ -31,6 +31,16 @@ public class StudentModel {
 			}
 		}
 		return null;
+	}
+
+
+	public static boolean insert(Student student) {
+		if(student != null && index < 5) {
+			allData[index] = student;
+			index++;
+			return true;
+		}
+		return false;
 	}
 
 }

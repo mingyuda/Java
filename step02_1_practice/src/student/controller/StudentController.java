@@ -12,9 +12,13 @@ public class StudentController {
 			EndView.printAll((Student[]) StudentModel.getAll());
 		}else if(reNum == 2) {
 			EndView.printOne(StudentModel.getOne("KIM"));
+		}else if(reNum == 3) {
+			boolean b = StudentModel.insert(new Student("Ji", 3, "economics"));
+			if(b) {
+				EndView.printSuccess("등록 완료");
+			} else {
+				EndView.printFail("등록 실패");}
 		}
-		
-		
 	}
 
 }

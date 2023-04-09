@@ -22,4 +22,13 @@ public class EndView {
 		
 	}
 
+	public static void printSuccess(String string) {
+		System.out.println(string);
+	}
+
+	public static void printFail(String string) {
+		System.out.println(string);
+		
+	}
+
 }

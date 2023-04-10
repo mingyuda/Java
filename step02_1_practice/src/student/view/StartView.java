@@ -12,7 +12,9 @@ public class StartView {
 		System.out.println("=== 특정 학생 등록 ===");
 		StudentController.request(3);
 		StudentController.request(1);
-		
+		System.out.println("=== 특정 학생 정보 삭제 ===");
+		StudentController.request(4);
+		StudentController.request(1);
 	}
 
 }

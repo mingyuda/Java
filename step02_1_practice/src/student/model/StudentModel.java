@@ -43,4 +43,15 @@ public class StudentModel {
 		return false;
 	}
 
+
+	public static boolean delete(String name) { // Student 객체로 정하면  값을 다 넣어줘야해서 String으로 처리
+		for(int i = 0; i < allData.length; i++) {
+			if(allData[i] != null && name.equals(allData[i].getName())) {
+				allData[i] = null;
+				return true;
+			}
+		}
+		return false;
+	}
+
 }

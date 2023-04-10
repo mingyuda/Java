@@ -18,6 +18,14 @@ public class StudentController {
 				EndView.printSuccess("등록 완료");
 			} else {
 				EndView.printFail("등록 실패");}
+		} else if(reNum == 4){
+			boolean b = StudentModel.delete("Ji"); 
+			if(b) {
+				EndView.printSuccess("삭제 완료");
+			}else {
+				EndView.printFail("삭제 실패");
+			}
+				
 		}
 	}
 

@@ -1,0 +1,57 @@
+1. DTO
+	- Customer
+		- customerId 	String 
+		- phoneNum 		int
+		
+	- Book
+		- title 		String
+		- isbn 			int
+		- publisher 	String
+		- price			int
+		- authorId		String
+		
+	- Author
+		- name			String
+		- nationality	String
+		- authorId		String
+		- birth			int
+		
+	- OrderList
+		- customerId	String
+		- orderNum		int
+		- isbn			int
+
+2. 전체 프로젝트의 기능 (메소드 정의: 타입, 이름, 파라미터):
+
+DAO
+- CustomerDAO
+	- addCustomer(Customer customer)
+	- updateCustomerByCustomerId(String customerId, int phonenum)
+	- deleteCustomerByCustomerId(String customerId)
+	- getCustomerByCustomerId(String customerId)
+
+- BookDAO
+	- addBook(Book book)
+	- updateBookByIsbn(int isbn, int price)
+	- deleteBookByIsbn(int isbn)
+	- getBookByIsbn(int isbn)
+	- getBookByCustomerId(String customerId) *
+
+- AuthorDAO 
+	- addAuthor(Author author)
+	- updateAuthorByAuthorId(String authorId, String name)
+	- deleteAuthorByAuthorId(String authorId)
+	- getAuthorByAuthorId(String authorId)
+
+- OrderListDAO
+	- addOrderList(OrderList OrderList)
+	- updateOrderListByOrderNum(int orderNum, int isbn)
+	- deleteOrderListByOrderNum(int orderNum)
+	- getOrderListByCustomerId(String custormerId) *
+	- Over2Delete(OrderListDTO orderList) *
+
+
+
+
+
+
